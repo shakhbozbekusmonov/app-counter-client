@@ -3,7 +3,6 @@ import {connect} from "react-redux";
 import {decrementNumber, incrementNumber} from "../redux/actions/counterAction";
 
 const Counter = (props) => {
-    console.log(props);
     return (
         <div className="container">
             <div className="row">
@@ -27,7 +26,6 @@ const Counter = (props) => {
 };
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
         number:state.counter.number
     }
